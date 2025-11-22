@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+/* Hero section background fallback */
+
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('http://static.photos/construction/1200x630/1') no-repeat center center;
+    background-size: cover;
+}
+
+
+/* Admin styles */
+
+.admin-nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #4b5563;
+    border-radius: 0.375rem;
+    transition: all 0.2s;
+}
+
+.admin-nav-link:hover {
+    background-color: #f3f4f6;
+    color: #1f2937;
+}
+
+.admin-nav-link.active {
+    background-color: #e5e7eb;
+    color: #111827;
+    font-weight: 600;
+}
+
+.admin-section {
+    display: none;
+}
+
+.admin-section.active {
+    display: block;
+}
+
+
+/* Animation for buttons */
+
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: translateY(-2px);
+}
+
+
+/* Responsive adjustments */
+
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+    #hero p {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* Booking Modal Styles */
+
+#bookingModal {
+    transition: opacity 0.3s ease;
+}
+
+#bookingModal .bg-white {
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+#bookingModal.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#bookingModal.hidden .bg-white {
+    transform: translateY(-20px);
+}
+
+
+/* Cost Display */
+
+#costDisplay {
+    transition: all 0.3s ease;
+}
+
+#costDisplay p {
+    margin-bottom: 0.5rem;
+}
+
+#costDisplay p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Equipment card styles */
+
+.bg-gray-50:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+
+/* Disabled button styles */
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background-color: #9ca3af !important;
+}

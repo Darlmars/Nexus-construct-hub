@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Solutions | ConstructGuard Nexus</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+
+<body class="bg-gray-100">
+    <custom-navbar></custom-navbar>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gray-900 text-white py-20">
+        <div class="container mx-auto px-6 text-center relative">
+            <a href="/" class="absolute left-8 top-4 text-white hover:text-blue-200 transition duration-300 flex items-center gap-2 z-50">
+                <i data-feather="arrow-left"></i> Back to Home
+            </a>
+            <div class="relative pt-16">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Security Solutions</h1>
+                <p class="text-xl md:text-2xl mb-8">Comprehensive security systems to protect your home and business</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Products -->
+    <section class="py-16 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Security Products</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- CCTV Systems -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <img src="http://static.photos/technology/640x360/1" alt="CCTV Camera System" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-3">CCTV Surveillance System</h3>
+                    <p class="text-gray-600 mb-2">High-definition cameras with night vision and remote monitoring capabilities.</p>
+                    <p class="text-blue-600 font-medium mb-4">From KSh 25,000</p>
+                    <div class="flex gap-2">
+                        <button onclick="openPurchaseForm('CCTV Surveillance System')" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300">
+                            Purchase
+                        </button>
+                        <button onclick="openSurveyForm()" class="flex-1 bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg transition duration-300">
+                            Book Survey
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Access Control -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <img src="http://static.photos/technology/640x360/2" alt="Access Control System" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-3">Access Control System</h3>
+                    <p class="text-gray-600 mb-2">Biometric and card-based entry systems for secure premises access.</p>
+                    <p class="text-blue-600 font-medium mb-4">From KSh 35,000</p>
+                    <div class="flex gap-2">
+                        <button onclick="openPurchaseForm('Access Control System')" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300">
+                            Purchase
+                        </button>
+                        <button onclick="openSurveyForm()" class="flex-1 bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg transition duration-300">
+                            Book Survey
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Electric Fencing -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <img src="http://static.photos/technology/640x360/3" alt="Electric Fencing" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-3">Electric Fencing</h3>
+                    <p class="text-gray-600 mb-2">Perimeter security system with high-voltage deterrent and alarm.</p>
+                    <p class="text-blue-600 font-medium mb-4">From KSh 150 per meter</p>
+                    <div class="flex gap-2">
+                        <button onclick="openPurchaseForm('Electric Fencing')" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300">
+                            Purchase
+                        </button>
+                        <button onclick="openSurveyForm()" class="flex-1 bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg transition duration-300">
+                            Book Survey
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Alarm Systems -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <img src="http://static.photos/technology/640x360/4" alt="Alarm System" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-3">Intruder Alarm System</h3>
+                    <p class="text-gray-600 mb-2">Motion sensors and sirens with remote monitoring and mobile alerts.</p>
+                    <p class="text-blue-600 font-medium mb-4">From KSh 18,000</p>
+                    <div class="flex gap-2">
+                        <button onclick="openPurchaseForm('Intruder Alarm System')" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300">
+                            Purchase
+                        </button>
+                        <button onclick="openSurveyForm()" class="flex-1 bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg transition duration-300">
+                            Book Survey
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Fire Detection -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <img src="http://static.photos/technology/640x360/5" alt="Fire Detection System" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-3">Fire Detection System</h3>
+                    <p class="text-gray-600 mb-2">Smoke and heat detectors with automatic alarm and sprinkler activation.</p>
+                    <p class="text-blue-600 font-medium mb-4">From KSh 30,000</p>
+                    <div class="flex gap-2">
+                        <button onclick="openPurchaseForm('Fire Detection System')" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300">
+                            Purchase
+                        </button>
+                        <button onclick="openSurveyForm()" class="flex-1 bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg transition duration-300">
+                            Book Survey
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Security Lighting -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <img src="http://static.photos/technology/640x360/6" alt="Security Lighting" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-3">Security Lighting</h3>
+                    <p class="text-gray-600 mb-2">Motion-activated LED floodlights with dusk-to-dawn operation.</p>
+                    <p class="text-blue-600 font-medium mb-4">From KSh 8,000 per light</p>
+                    <div class="flex gap-2">
+                        <button onclick="openPurchaseForm('Security Lighting')" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300">
+                            Purchase
+                        </button>
+                        <button onclick="openSurveyForm()" class="flex-1 bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg transition duration-300">
+                            Book Survey
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Purchase Modal -->
+    <div id="purchaseModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-lg shadow-xl max-w-md w-full p-6">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-xl font-semibold">Purchase Security Equipment</h3>
+                <button onclick="closePurchaseModal()" class="text-gray-500 hover:text-gray-700">
+                    <i data-feather="x"></i>
+                </button>
+            </div>
+            <form id="purchaseForm">
+                <input type="hidden" id="productName">
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-2">Product</label>
+                    <input type="text" id="productDisplay" class="w-full px-4 py-2 border rounded-lg bg-gray-100" readonly>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-2">Quantity</label>
+                    <input type="number" id="quantity" min="1" class="w-full px-4 py-2 border rounded-lg" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-2">Your Name</label>
+                    <input type="text" id="customerName" class="w-full px-4 py-2 border rounded-lg" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-2">Phone Number</label>
+                    <input type="tel" id="customerPhone" class="w-full px-4 py-2 border rounded-lg" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-2">Email</label>
+                    <input type="email" id="customerEmail" class="w-full px-4 py-2 border rounded-lg" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-2">Additional Notes</label>
+                    <textarea id="purchaseNotes" rows="3" class="w-full px-4 py-2 border rounded-lg"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg transition duration-300">
+                    Submit Purchase Request
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Survey Modal -->
+    <div id="surveyModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-lg shadow-xl max-w-md w-full p-6">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-xl font-semibold">Book Security Survey</h3>
+                <button onclick="closeSurveyModal()" class="text-gray-500 hover:text-gray-700">
+                    <i data-feather="x"></i>
+                </button>
+            </div>
+            <form id="surveyForm">
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-2">Your Name</label>
+                    <input type="text" id="surveyName" class="w-full px-4 py-2 border rounded-lg" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-2">Phone Number</label>
+                    <input type="tel" id="surveyPhone" class="w-full px-4 py-2 border rounded-lg" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-2">Email</label>
+                    <input type="email" id="surveyEmail" class="w-full px-4 py-2 border rounded-lg" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-2">Property Address</label>
+                    <textarea id="propertyAddress" rows="3" class="w-full px-4 py-2 border rounded-lg" required></textarea>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-2">Preferred Survey Date</label>
+                    <input type="date" id="surveyDate" class="w-full px-4 py-2 border rounded-lg" required min="">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-2">Security Concerns</label>
+                    <textarea id="securityConcerns" rows="3" class="w-full px-4 py-2 border rounded-lg"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg transition duration-300">
+                    Book Security Survey
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <custom-footer></custom-footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/254756167594" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition duration-300 z-50">
+        <i data-feather="message-square" class="w-6 h-6"></i>
+    </a>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            feather.replace();
+
+            // Set min date for survey to tomorrow
+            const today = new Date();
+            const tomorrow = new Date(today);
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            document.getElementById('surveyDate').min = tomorrow.toISOString().split('T')[0];
+
+            // Handle purchase form submission
+            document.getElementById('purchaseForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Purchase request submitted! Our team will contact you shortly.');
+                closePurchaseModal();
+                this.reset();
+            });
+
+            // Handle survey form submission
+            document.getElementById('surveyForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Survey request submitted! Our team will contact you to confirm the appointment.');
+                closeSurveyModal();
+                this.reset();
+            });
+        });
+
+        function openPurchaseForm(product) {
+            document.getElementById('productName').value = product;
+            document.getElementById('productDisplay').value = product;
+            document.getElementById('purchaseModal').classList.remove('hidden');
+        }
+
+        function closePurchaseModal() {
+            document.getElementById('purchaseModal').classList.add('hidden');
+        }
+
+        function openSurveyForm() {
+            document.getElementById('surveyModal').classList.remove('hidden');
+        }
+
+        function closeSurveyModal() {
+            document.getElementById('surveyModal').classList.add('hidden');
+        }
+    </script>
+</body>
+
+</html>

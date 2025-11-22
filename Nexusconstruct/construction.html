@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Services | ConstructGuard Nexus</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+
+<body class="bg-gray-100">
+    <custom-navbar></custom-navbar>
+    <!-- Hero Section -->
+    <section class="relative bg-blue-800 text-white py-20">
+        <div class="container mx-auto px-6 text-center relative">
+            <a href="/" class="absolute left-8 top-4 text-white hover:text-blue-200 transition duration-300 flex items-center gap-2 z-50">
+                <i data-feather="arrow-left"></i> Back to Home
+            </a>
+            <div class="relative pt-16">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Construction Services</h1>
+                <script>
+                    feather.replace();
+                </script>
+                <p class="text-xl md:text-2xl mb-8">Comprehensive building solutions from foundation to finish</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Construction Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Building Construction -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <img src="http://static.photos/construction/640x360/1" alt="Building Construction" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-3">Building Construction</h3>
+                    <p class="text-gray-600 mb-4">From residential homes to commercial complexes, we handle all aspects of construction with precision and expertise.</p>
+                    <button class="book-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 w-full" data-service="Building Construction">
+                        Book Service
+                    </button>
+                </div>
+
+                <!-- Plumbing -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <img src="http://static.photos/plumber/640x360/2" alt="Plumbing Services" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-3">Plumbing Services</h3>
+                    <p class="text-gray-600 mb-4">Expert plumbing solutions including installation, maintenance, and repairs for all types of buildings.</p>
+                    <button class="book-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 w-full" data-service="Plumbing Services">
+                        Book Service
+                    </button>
+                </div>
+
+                <!-- Electrical -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <img src="http://static.photos/electrician/640x360/3" alt="Electrical Services" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-3">Electrical Services</h3>
+                    <p class="text-gray-600 mb-4">Safe and reliable electrical installations, wiring, and maintenance by certified electricians.</p>
+                    <button class="book-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 w-full" data-service="Electrical Services">
+                        Book Service
+                    </button>
+                </div>
+
+                <!-- Landscaping -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <img src="http://static.photos/garden/640x360/4" alt="Landscaping Services" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-3">Landscaping Services</h3>
+                    <p class="text-gray-600 mb-4">Transform your outdoor spaces with our professional landscaping design and maintenance services.</p>
+                    <button class="book-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 w-full" data-service="Landscaping Services">
+                        Book Service
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment Rental Section -->
+    <section class="py-16 px-6 bg-gray-100" id="equipment">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Construction Equipment Rental</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Excavator -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <img src="http://static.photos/construction/640x360/11" alt="Excavator" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Excavator</h3>
+                    <p class="text-gray-600 mb-2">5-ton capacity for digging and earth moving</p>
+                    <p class="text-blue-600 font-medium mb-4">KSh 2,500 / hour</p>
+                    <button class="book-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 w-full" data-service="Excavator">
+                        Rent Now
+                    </button>
+                </div>
+
+                <!-- Concrete Mixer -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <img src="http://static.photos/construction/640x360/12" alt="Concrete Mixer" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Concrete Mixer</h3>
+                    <p class="text-gray-600 mb-2">3.5 cubic feet capacity portable mixer</p>
+                    <p class="text-blue-600 font-medium mb-4">KSh 1,800 / hour</p>
+                    <button class="book-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 w-full" data-service="Concrete Mixer">
+                        Rent Now
+                    </button>
+                </div>
+
+                <!-- Bulldozer -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <img src="http://static.photos/construction/640x360/13" alt="Bulldozer" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Bulldozer</h3>
+                    <p class="text-gray-600 mb-2">Caterpillar D6 for large scale earth moving</p>
+                    <p class="text-blue-600 font-medium mb-4">KSh 3,500 / hour</p>
+                    <button class="book-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 w-full" data-service="Bulldozer">
+                        Rent Now
+                    </button>
+                </div>
+
+                <!-- Tower Crane -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <img src="http://static.photos/construction/640x360/14" alt="Tower Crane" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Tower Crane</h3>
+                    <p class="text-gray-600 mb-2">50-ton capacity for high-rise construction</p>
+                    <p class="text-blue-600 font-medium mb-4">KSh 5,000 / hour</p>
+                    <button class="book-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 w-full" data-service="Tower Crane">
+                        Rent Now
+                    </button>
+                </div>
+
+                <!-- Backhoe Loader -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <img src="http://static.photos/construction/640x360/15" alt="Backhoe Loader" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Backhoe Loader</h3>
+                    <p class="text-gray-600 mb-2">Versatile machine for digging and loading</p>
+                    <p class="text-blue-600 font-medium mb-4">KSh 2,800 / hour</p>
+                    <button class="book-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 w-full" data-service="Backhoe Loader">
+                        Rent Now
+                    </button>
+                </div>
+                <!-- Scaffolding -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <img src="http://static.photos/construction/640x360/16" alt="Scaffolding" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Scaffolding Set</h3>
+                    <p class="text-gray-600 mb-2">Complete set adjustable up to 10m height</p>
+                    <p class="text-blue-600 font-medium mb-4">KSh 1,500 / hour</p>
+                    <button class="book-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 w-full" data-service="Scaffolding Set">
+                        Rent Now
+                    </button>
+                </div>
+
+                <!-- Vibratory Roller -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <img src="http://static.photos/construction/640x360/17" alt="Vibratory Roller" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Vibratory Roller</h3>
+                    <p class="text-gray-600 mb-2">1.5 ton roller for compacting soils and asphalt</p>
+                    <p class="text-blue-600 font-medium mb-4">KSh 2,000 / hour</p>
+                    <button class="book-btn bg-blue-600 hover:blue-700 text-white px-4 py-2 rounded-lg transition duration-300 w-full" data-service="Vibratory Roller">
+                        Rent Now
+                    </button>
+                </div>
+
+                <!-- Forklift -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <img src="http://static.photos/construction/640x360/18" alt="Forklift" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Forklift</h3>
+                    <p class="text-gray-600 mb-2">3-ton capacity for material handling</p>
+                    <p class="text-blue-600 font-medium mb-4">KSh 2,200 / hour</p>
+                    <button class="book-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 w-full" data-service="Forklift">
+                        Rent Now
+                    </button>
+                </div>
+
+                <!-- Concrete Pump -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <img src="http://static.photos/construction/640x360/19" alt="Concrete Pump" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Concrete Pump</h3>
+                    <p class="text-gray-600 mb-2">32m boom for high-volume concrete placement</p>
+                    <p class="text-blue-600 font-medium mb-4">KSh 4,500 / hour</p>
+                    <button class="book-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 w-full" data-service="Concrete Pump">
+                        Rent Now
+                    </button>
+                </div>
+
+                <!-- Skid Steer Loader -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <img src="http://static.photos/construction/640x360/20" alt="Skid Steer Loader" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Skid Steer Loader</h3>
+                    <p class="text-gray-600 mb-2">Compact loader for tight spaces</p>
+                    <p class="text-blue-600 font-medium mb-4">KSh 2,800 / hour</p>
+                    <button class="book-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 w-full" data-service="Skid Steer Loader">
+                        Rent Now
+                    </button>
+                </div>
+                <!-- Generator -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <img src="http://static.photos/construction/640x360/21" alt="Generator" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Generator (100KVA)</h3>
+                    <p class="text-gray-600 mb-2">Diesel-powered for heavy-duty power supply</p>
+                    <p class="text-blue-600 font-medium mb-4">KSh 3,500 / day</p>
+                    <button class="book-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 w-full" data-service="Generator (100KVA)">
+                        Rent Now
+                    </button>
+                </div>
+
+                <!-- Dump Truck -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <img src="http://static.photos/construction/640x360/22" alt="Dump Truck" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Dump Truck (10 ton)</h3>
+                    <p class="text-gray-600 mb-2">For transporting construction materials and debris</p>
+                    <p class="text-blue-600 font-medium mb-4">KSh 4,200 / day</p>
+                    <button class="book-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 w-full" data-service="Dump Truck (10 ton)">
+                        Rent Now
+                    </button>
+                </div>
+
+                <!-- Asphalt Paver -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <img src="http://static.photos/construction/640x360/23" alt="Asphalt Paver" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Asphalt Paver</h3>
+                    <p class="text-gray-600 mb-2">For laying asphalt on roads and pavements</p>
+                    <p class="text-blue-600 font-medium mb-4">KSh 6,500 / day</p>
+                    <button class="book-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 w-full" data-service="Asphalt Paver">
+                        Rent Now
+                    </button>
+                </div>
+
+                <!-- Crawler Crane -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <img src="http://static.photos/construction/640x360/24" alt="Crawler Crane" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Crawler Crane (80 ton)</h3>
+                    <p class="text-gray-600 mb-2">Heavy lifting capacity for major projects</p>
+                    <p class="text-blue-600 font-medium mb-4">KSh 8,000 / day</p>
+                    <button class="book-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 w-full" data-service="Crawler Crane (80 ton)">
+                        Rent Now
+                    </button>
+                </div>
+
+                <!-- Concrete Cutter -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <img src="http://static.photos/construction/640x360/25" alt="Concrete Cutter" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Concrete Cutter</h3>
+                    <p class="text-gray-600 mb-2">Diamond blade cutting for concrete and masonry</p>
+                    <p class="text-blue-600 font-medium mb-4">KSh 2,800 / day</p>
+                    <button class="book-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 w-full" data-service="Concrete Cutter">
+                        Rent Now
+                    </button>
+                </div>
+
+                <!-- Water Pump -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <img src="http://static.photos/construction/640x360/26" alt="Water Pump" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Water Pump (High Capacity)</h3>
+                    <p class="text-gray-600 mb-2">For dewatering or water supply on site</p>
+                    <p class="text-blue-600 font-medium mb-4">KSh 1,800 / day</p>
+                    <button class="book-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 w-full" data-service="Water Pump (High Capacity)">
+                        Rent Now
+                    </button>
+                </div>
+
+                <!-- Boom Lift -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <img src="http://static.photos/construction/640x360/27" alt="Boom Lift" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Boom Lift (60 ft)</h3>
+                    <p class="text-gray-600 mb-2">Aerial work platform for high access</p>
+                    <p class="text-blue-600 font-medium mb-4">KSh 3,200 / day</p>
+                    <button class="book-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 w-full" data-service="Boom Lift (60 ft)">
+                        Rent Now
+                    </button>
+                </div>
+
+                <!-- Plate Compactor -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <img src="http://static.photos/construction/640x360/28" alt="Plate Compactor" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Plate Compactor</h3>
+                    <p class="text-gray-600 mb-2">For compacting soils and granular materials</p>
+                    <p class="text-blue-600 font-medium mb-4">KSh 1,200 / day</p>
+                    <button class="book-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 w-full" data-service="Plate Compactor">
+                        Rent Now
+                    </button>
+                </div>
+
+                <!-- Concrete Vibrator -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <img src="http://static.photos/construction/640x360/29" alt="Concrete Vibrator" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Concrete Vibrator</h3>
+                    <p class="text-gray-600 mb-2">For eliminating air pockets in concrete</p>
+                    <p class="text-blue-600 font-medium mb-4">KSh 1,000 / day</p>
+                    <button class="book-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 w-full" data-service="Concrete Vibrator">
+                        Rent Now
+                    </button>
+                </div>
+
+                <!-- Trencher -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <img src="http://static.photos/construction/640x360/30" alt="Trencher" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Trencher</h3>
+                    <p class="text-gray-600 mb-2">For digging trenches for utilities and drainage</p>
+                    <p class="text-blue-600 font-medium mb-4">KSh 2,500 / day</p>
+                    <button class="book-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 w-full" data-service="Trencher">
+                        Rent Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-lg shadow-xl max-w-md w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-xl font-semibold">Book Service/Equipment</h3>
+                    <button id="closeModal" class="text-gray-500 hover:text-gray-700">
+                        <i data-feather="x"></i>
+                    </button>
+                </div>
+                <form id="bookingForm">
+                    <input type="hidden" id="serviceType">
+                    <input type="hidden" id="equipmentId">
+
+                    <div class="mb-4">
+                        <label for="fullName" class="block text-gray-700 mb-2">Full Name</label>
+                        <input type="text" id="fullName" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 mb-2">Email</label>
+                        <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
+                        <input type="tel" id="phone" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="serviceDetails" class="block text-gray-700 mb-2">Service/Equipment Details</label>
+                        <input type="text" id="serviceDetails" class="w-full px-4 py-2 border rounded-lg bg-gray-100" readonly>
+                    </div>
+                    <div class="mb-4">
+                        <label for="startDate" class="block text-gray-700 mb-2">Start Date</label>
+                        <input type="date" id="startDate" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required min="${new Date().toISOString().split('T')[0]}" onchange="calculateCost()">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="endDate" class="block text-gray-700 mb-2">End Date</label>
+                        <input type="date" id="endDate" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required min="${new Date().toISOString().split('T')[0]}" onchange="calculateCost()">
+                    </div>
+
+                    <div id="costSummary" class="mb-4 p-4 bg-blue-50 rounded-lg hidden">
+                        <div class="flex justify-between">
+                            <span class="font-medium">Duration:</span>
+                            <span id="durationDisplay">0 days</span>
+                        </div>
+                        <div class="flex justify-between mt-2">
+                            <span class="font-medium">Rate:</span>
+                            <span id="rateDisplay">KSh 0/day</span>
+                        </div>
+                        <div class="flex justify-between mt-2 font-bold text-blue-700">
+                            <span>Total Cost:</span>
+                            <span id="totalDisplay">KSh 0</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="notes" class="block text-gray-700 mb-2">Additional Notes</label>
+                        <textarea id="notes" rows="3" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    </div>
+                    <div id="costDisplay" class="hidden mt-4 p-3 bg-blue-50 text-blue-800 rounded-lg">
+                        <p><strong>Duration:</strong> <span id="durationDays">0</span> days</p>
+                        <p><strong>Total Cost:</strong> KSh <span id="totalCost">0</span></p>
+                        <p class="text-sm"><span id="rateInfo"></span></p>
+                    </div>
+
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg transition duration-300 mt-4">
+                        Submit Booking Request
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <custom-footer></custom-footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/254756167594" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition duration-300 z-50">
+        <i data-feather="message-square" class="w-6 h-6"></i>
+    </a>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+        document.addEventListener('DOMContentLoaded', function() {
+            // Service/Equipment rates
+            const rates = {
+                // Construction Services
+                'Building Construction': {
+                    type: 'service',
+                    rate: 5000,
+                    unit: 'day'
+                },
+                'Plumbing Services': {
+                    type: 'service',
+                    rate: 3500,
+                    unit: 'day'
+                },
+                'Electrical Services': {
+                    type: 'service',
+                    rate: 4000,
+                    unit: 'day'
+                },
+                'Landscaping Services': {
+                    type: 'service',
+                    rate: 4500,
+                    unit: 'day'
+                },
+
+                // Equipment Rental
+                'Excavator': {
+                    type: 'equipment',
+                    rate: 2500,
+                    unit: 'hour'
+                },
+                'Concrete Mixer': {
+                    type: 'equipment',
+                    rate: 1800,
+                    unit: 'hour'
+                },
+                'Bulldozer': {
+                    type: 'equipment',
+                    rate: 3500,
+                    unit: 'hour'
+                },
+                'Tower Crane': {
+                    type: 'equipment',
+                    rate: 5000,
+                    unit: 'hour'
+                },
+                'Backhoe Loader': {
+                    type: 'equipment',
+                    rate: 2800,
+                    unit: 'hour'
+                },
+                'Scaffolding Set': {
+                    type: 'equipment',
+                    rate: 1500,
+                    unit: 'hour'
+                },
+                'Vibratory Roller': {
+                    type: 'equipment',
+                    rate: 2000,
+                    unit: 'hour'
+                },
+                'Forklift': {
+                    type: 'equipment',
+                    rate: 2200,
+                    unit: 'hour'
+                },
+                'Concrete Pump': {
+                    type: 'equipment',
+                    rate: 4500,
+                    unit: 'hour'
+                },
+                'Skid Steer Loader': {
+                    type: 'equipment',
+                    rate: 2800,
+                    unit: 'hour'
+                },
+                'Generator (100KVA)': {
+                    type: 'equipment',
+                    rate: 3500,
+                    unit: 'day'
+                },
+                'Dump Truck (10 ton)': {
+                    type: 'equipment',
+                    rate: 4200,
+                    unit: 'day'
+                },
+                'Asphalt Paver': {
+                    type: 'equipment',
+                    rate: 6500,
+                    unit: 'day'
+                },
+                'Crawler Crane (80 ton)': {
+                    type: 'equipment',
+                    rate: 8000,
+                    unit: 'day'
+                },
+                'Concrete Cutter': {
+                    type: 'equipment',
+                    rate: 2800,
+                    unit: 'day'
+                },
+                'Water Pump (High Capacity)': {
+                    type: 'equipment',
+                    rate: 1800,
+                    unit: 'day'
+                },
+                'Boom Lift (60 ft)': {
+                    type: 'equipment',
+                    rate: 3200,
+                    unit: 'day'
+                },
+                'Plate Compactor': {
+                    type: 'equipment',
+                    rate: 1200,
+                    unit: 'day'
+                },
+                'Concrete Vibrator': {
+                    type: 'equipment',
+                    rate: 1000,
+                    unit: 'day'
+                },
+                'Trencher': {
+                    type: 'equipment',
+                    rate: 2500,
+                    unit: 'day'
+                }
+            };
+
+            // Booking modal functionality
+            const modal = document.getElementById('bookingModal');
+            const closeModal = document.getElementById('closeModal');
+            const bookButtons = document.querySelectorAll('.book-btn');
+            const bookingForm = document.getElementById('bookingForm');
+            const serviceDetails = document.getElementById('serviceDetails');
+            const serviceType = document.getElementById('serviceType');
+            const equipmentId = document.getElementById('equipmentId');
+
+            // Open modal when any book button is clicked
+            bookButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const service = this.getAttribute('data-service');
+                    serviceDetails.value = service;
+                    serviceType.value = 'service'; // Distinguish between service and equipment
+                    modal.classList.remove('hidden');
+                });
+            });
+
+            // Close modal
+            closeModal.addEventListener('click', function() {
+                modal.classList.add('hidden');
+            });
+            // Calculate duration and cost
+            function calculateCost() {
+                const startDateInput = document.getElementById('startDate');
+                const endDateInput = document.getElementById('endDate');
+                const service = document.getElementById('serviceDetails').value;
+                const costSummary = document.getElementById('costSummary');
+
+                if (!startDateInput.value || !endDateInput.value || !service) {
+                    costSummary.classList.add('hidden');
+                    return;
+                }
+
+                const startDate = new Date(startDateInput.value);
+                const endDate = new Date(endDateInput.value);
+
+                // Validate dates
+                if (startDate >= endDate) {
+                    alert('End date must be after start date');
+                    endDateInput.value = '';
+                    costSummary.classList.add('hidden');
+                    return;
+                }
+
+                const rateInfo = rates[service];
+                if (!rateInfo) {
+                    costSummary.classList.add('hidden');
+                    return;
+                }
+
+                // Calculate duration in days
+                const timeDiff = endDate - startDate;
+                const days = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
+
+                // Calculate total cost
+                let totalCost, unit;
+                if (rateInfo.unit === 'day') {
+                    totalCost = rateInfo.rate * days;
+                    unit = 'day';
+                } else {
+                    // For hourly rates, calculate total hours
+                    const hours = Math.ceil(timeDiff / (1000 * 60 * 60));
+                    totalCost = rateInfo.rate * hours;
+                    unit = 'hour';
+                }
+
+                // Update display
+                document.getElementById('durationDisplay').textContent = `${days} day${days !== 1 ? 's' : ''}`;
+                document.getElementById('rateDisplay').textContent = `KSh ${rateInfo.rate.toLocaleString()}/${unit}`;
+                document.getElementById('totalDisplay').textContent = `KSh ${totalCost.toLocaleString()}`;
+                costSummary.classList.remove('hidden');
+
+                // Ensure end date is after start date
+                endDateInput.min = startDateInput.value;
+            }
+            // Initialize date inputs with today's date as min
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('startDate').min = today;
+            document.getElementById('endDate').min = today;
+            // Handle form submission
+            bookingForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Booking request submitted! Our team will contact you shortly.');
+                modal.classList.add('hidden');
+                this.reset();
+                document.getElementById('costDisplay').classList.add('hidden');
+
+                // In a real app, you would send this data to your server
+                const formData = {
+                    name: document.getElementById('fullName').value,
+                    email: document.getElementById('email').value,
+                    phone: document.getElementById('phone').value,
+                    service: document.getElementById('serviceDetails').value,
+                    startDate: document.getElementById('startDate').value,
+                    endDate: document.getElementById('endDate').value,
+                    duration: document.getElementById('durationDays').textContent,
+                    totalCost: document.getElementById('totalCost').textContent,
+                    notes: document.getElementById('notes').value,
+                    type: serviceType.value,
+                    equipmentId: equipmentId.value
+                };
+
+                console.log('Form data to be sent to server:', formData);
+                // fetch('/api/bookings', { method: 'POST', body: JSON.stringify(formData) })
+                //   .then(response => response.json())
+                //   .then(data => console.log(data))
+                //   .catch(error => console.error(error));
+            });
+        });
+
+        // Function to open equipment booking modal
+    </script>
+</body>
+
+</html>
